@@ -1,24 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invitación Especial - Fortaleciendo nuestros Valores y Costumbres</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Three.js Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -37,6 +38,7 @@
             }
         }
     </script>
+
     <style>
         body {
             background-color: #0c0a09;
@@ -44,6 +46,7 @@
             font-family: 'Plus Jakarta Sans', sans-serif;
             overflow-x: hidden;
         }
+
         #canvas-container {
             position: fixed;
             top: 0;
@@ -53,72 +56,88 @@
             z-index: 0;
             pointer-events: none;
         }
+
         .glass-card {
             background: rgba(28, 25, 23, 0.75);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(244, 196, 48, 0.2);
         }
+
         .glass-nav {
             background: rgba(12, 10, 9, 0.85);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(244, 196, 48, 0.25);
         }
+
         .gradient-text {
             background: linear-gradient(135deg, #F4C430 0%, #E67E22 50%, #FF5722 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .glow-effect {
             box-shadow: 0 0 30px rgba(244, 196, 48, 0.2);
         }
+
         .schedule-row {
             transition: all 0.3s ease;
         }
+
         .schedule-row:hover {
             background: rgba(244, 196, 48, 0.12);
         }
+
         .highlight-course {
             animation: pulse-border 1.5s infinite;
             background: rgba(217, 107, 67, 0.3) !important;
             border-color: #F4C430 !important;
         }
+
         @keyframes pulse-border {
             0% { box-shadow: 0 0 0 0 rgba(244, 196, 48, 0.7); }
             70% { box-shadow: 0 0 0 12px rgba(244, 196, 48, 0); }
             100% { box-shadow: 0 0 0 0 rgba(244, 196, 48, 0); }
         }
+
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
             background: #0c0a09;
         }
+
         ::-webkit-scrollbar-thumb {
             background: #44403c;
             border-radius: 4px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
             background: #f59e0b;
         }
     </style>
+
     <link rel="stylesheet" href="css/galeria.css">
 </head>
+
 <body class="min-h-screen relative selection:bg-amber-500 selection:text-black">
 
     <!-- Canvas 3D Background -->
     <div id="canvas-container"></div>
 
     <div class="relative z-10 flex flex-col min-h-screen">
-        
+
         <!-- Header / Navbar -->
         <header class="sticky top-0 z-50 glass-nav transition-all duration-300">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+
                 <div class="flex items-center space-x-3">
                     <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-amber-700 flex items-center justify-center shadow-lg shadow-amber-500/20">
                         <i data-lucide="sparkles" class="w-5 h-5 text-stone-950"></i>
                     </div>
+
                     <div>
                         <span class="font-cinzel text-base sm:text-lg font-bold tracking-wide text-amber-400 block leading-tight">Invitación Especial</span>
                         <span class="text-xs text-stone-400 font-medium">Campo: Cosmos y Pensamiento</span>
@@ -137,18 +156,22 @@
                         <span class="hidden sm:inline">Agendar Evento</span>
                     </button>
                 </div>
+
             </div>
         </header>
 
-        <!-- Main Content Streamlined Layout -->
+        <!-- Main Content -->
         <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-16">
-            
-            <!-- Hero / Banner de Invitación Principal -->
+
+            <!-- Hero / Banner de Invitación -->
             <section id="invitacion" class="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 relative overflow-hidden glow-effect">
+
                 <div class="absolute -right-20 -top-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
-                
+
                 <div class="grid lg:grid-cols-12 gap-8 items-center">
+
                     <div class="lg:col-span-7 space-y-6 text-left">
+
                         <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-wider">
                             <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
                             <span>Viernes 06/11/26</span>
@@ -167,6 +190,7 @@
                         </blockquote>
 
                         <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
+
                             <div class="bg-stone-900/80 p-3.5 rounded-2xl border border-stone-800">
                                 <span class="text-xs text-stone-400 block font-medium">Horario</span>
                                 <span class="text-stone-100 font-semibold text-sm sm:text-base flex items-center space-x-1 mt-0.5">
@@ -174,6 +198,7 @@
                                     <span>9:00 AM</span>
                                 </span>
                             </div>
+
                             <div class="bg-stone-900/80 p-3.5 rounded-2xl border border-stone-800">
                                 <span class="text-xs text-stone-400 block font-medium">Lugar</span>
                                 <span class="text-stone-100 font-semibold text-sm sm:text-base flex items-center space-x-1 mt-0.5">
@@ -181,6 +206,7 @@
                                     <span>Unidad Educativa</span>
                                 </span>
                             </div>
+
                             <div class="col-span-2 sm:col-span-1 bg-stone-900/80 p-3.5 rounded-2xl border border-stone-800">
                                 <span class="text-xs text-stone-400 block font-medium">Les esperamos</span>
                                 <span class="text-stone-100 font-semibold text-xs sm:text-sm flex items-center space-x-1 mt-0.5">
@@ -188,61 +214,73 @@
                                     <span>Profes del campo Cosmos y Pensamiento</span>
                                 </span>
                             </div>
+
                         </div>
                     </div>
 
-                    <!-- Countdown & Vector Art Column -->
+                    <!-- Countdown -->
                     <div class="lg:col-span-5 flex flex-col items-center justify-center bg-stone-900/60 p-6 sm:p-8 rounded-2xl border border-stone-800 space-y-6">
+
                         <div class="text-center space-y-1">
                             <h3 class="font-cinzel text-lg font-bold text-amber-400 uppercase tracking-widest">Cuenta Regresiva</h3>
                             <p class="text-xs text-stone-400">Viernes 06 de Noviembre</p>
                         </div>
 
-                        <!-- Countdown Grid -->
                         <div class="grid grid-cols-4 gap-2.5 w-full text-center">
+
                             <div class="bg-stone-950 p-3 rounded-xl border border-amber-500/20">
                                 <span id="days" class="font-cinzel text-xl sm:text-3xl font-bold text-amber-400 block">00</span>
                                 <span class="text-[10px] text-stone-400 uppercase">Días</span>
                             </div>
+
                             <div class="bg-stone-950 p-3 rounded-xl border border-amber-500/20">
                                 <span id="hours" class="font-cinzel text-xl sm:text-3xl font-bold text-amber-400 block">00</span>
                                 <span class="text-[10px] text-stone-400 uppercase">Horas</span>
                             </div>
+
                             <div class="bg-stone-950 p-3 rounded-xl border border-amber-500/20">
                                 <span id="minutes" class="font-cinzel text-xl sm:text-3xl font-bold text-amber-400 block">00</span>
                                 <span class="text-[10px] text-stone-400 uppercase">Min</span>
                             </div>
+
                             <div class="bg-stone-950 p-3 rounded-xl border border-amber-500/20">
                                 <span id="seconds" class="font-cinzel text-xl sm:text-3xl font-bold text-amber-400 block">00</span>
                                 <span class="text-[10px] text-stone-400 uppercase">Seg</span>
                             </div>
+
                         </div>
 
                         <div class="w-full flex justify-around items-center pt-2 border-t border-stone-800 text-stone-400 text-xs">
+
                             <div class="flex flex-col items-center space-y-1">
                                 <i data-lucide="book-open" class="w-6 h-6 text-amber-400"></i>
                                 <span>Valores</span>
                             </div>
+
                             <div class="flex flex-col items-center space-y-1">
                                 <i data-lucide="sparkles" class="w-6 h-6 text-amber-400"></i>
                                 <span>Espiritualidad</span>
                             </div>
+
                             <div class="flex flex-col items-center space-y-1">
                                 <i data-lucide="compass" class="w-6 h-6 text-amber-400"></i>
                                 <span>Filosofía</span>
                             </div>
+
                             <div class="flex flex-col items-center space-y-1">
                                 <i data-lucide="brain" class="w-6 h-6 text-amber-400"></i>
                                 <span>Psicología</span>
                             </div>
+
                         </div>
                     </div>
+
                 </div>
             </section>
 
-
-            <!-- Galería de imágenes: valores y costumbres -->
+            <!-- Galería de imágenes -->
             <section id="galeria" class="glass-card rounded-3xl p-6 sm:p-10 space-y-6">
+
                 <div class="text-center space-y-2">
                     <span class="text-amber-400 text-xs sm:text-sm uppercase tracking-widest">Nuestra identidad</span>
                     <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-white">VALORES Y COSTUMBRES</h2>
@@ -252,182 +290,382 @@
                 </div>
 
                 <div class="gallery-shell" aria-label="Galería de imágenes">
+
                     <button class="gallery-btn gallery-prev" type="button" aria-label="Imagen anterior">
                         &#10094;
                     </button>
 
                     <div class="gallery-viewport" id="galleryTrack">
+
                         <article class="gallery-slide">
                             <img src="img/galeria/costumbres.jpg" alt="Representación de costumbres y tradiciones">
                             <h3>Costumbres y tradiciones</h3>
                         </article>
+
                         <article class="gallery-slide">
                             <img src="img/galeria/valores.jpg" alt="Ilustración de valores humanos">
                             <h3>Fortaleciendo nuestros valores</h3>
                         </article>
+
                         <article class="gallery-slide">
                             <img src="img/galeria/espiritualidad.jpg" alt="Imagen relacionada con la espiritualidad">
                             <h3>Espiritualidad</h3>
                         </article>
+
                         <article class="gallery-slide">
                             <img src="img/galeria/religion.jpg" alt="Imagen religiosa de una custodia">
                             <h3>Fe y reflexión</h3>
                         </article>
+
                         <article class="gallery-slide">
                             <img src="img/galeria/naturaleza.jpg" alt="Plantas y naturaleza">
                             <h3>Vida y naturaleza</h3>
                         </article>
+
                     </div>
 
                     <button class="gallery-btn gallery-next" type="button" aria-label="Imagen siguiente">
                         &#10095;
                     </button>
+
                 </div>
+
                 <div class="gallery-dots" id="galleryDots" aria-label="Seleccionar imagen"></div>
             </section>
 
-            <!-- Sección: Cronograma Interactivo Original (Manuscrito) -->
+            <!-- Cronograma -->
             <section id="cronograma" class="glass-card rounded-3xl p-6 sm:p-10 space-y-6">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-stone-800 pb-6">
+
+                <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 border-b border-stone-800 pb-6">
+
                     <div>
                         <h2 class="font-cinzel text-2xl sm:text-4xl font-bold text-white tracking-wide">CRONOGRAMA</h2>
                         <p class="text-sm text-stone-400">Horarios asignados por bloque y curso (1ro A - 5to D)</p>
                     </div>
 
-                    <!-- Buscador interactivo de curso -->
-                    <div class="relative w-full md:w-72">
-                        <input type="text" id="courseSearch" oninput="filterCourse()" placeholder="Buscar tu curso (ej: 1A, 3B, 5D)..." 
-                               class="w-full bg-stone-900 border border-amber-500/30 rounded-xl px-4 py-2.5 text-sm text-white placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-all pl-10">
-                        <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3.5 top-3"></i>
+                    <!-- Buscador y tarjeta de horario -->
+                    <div class="w-full md:w-80 flex flex-col gap-3">
+
+                        <!-- Campo de búsqueda -->
+                        <div class="relative w-full">
+
+                            <input
+                                type="text"
+                                id="courseSearch"
+                                oninput="filterCourse()"
+                                placeholder="Buscar tu curso (ej: 1A, 3B, 5D)..."
+                                autocomplete="off"
+                                class="w-full bg-stone-900 border border-amber-500/30 rounded-xl px-4 py-3 pl-10 text-sm text-white placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-all"
+                            >
+
+                            <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3.5 top-3.5"></i>
+
+                        </div>
+
+                        <!-- Tarjeta del horario encontrado -->
+                        <div
+                            id="courseVisitMessage"
+                            class="hidden w-full overflow-hidden rounded-xl border border-amber-500/40 bg-gradient-to-br from-stone-900 to-stone-950 shadow-lg shadow-amber-500/10"
+                        >
+
+                            <div class="flex items-center justify-center gap-2 bg-amber-500/10 py-2 border-b border-amber-500/20">
+
+                                <i data-lucide="calendar-check" class="w-4 h-4 text-amber-400"></i>
+
+                                <span class="text-amber-400 text-xs font-bold tracking-widest uppercase">
+                                    Horario encontrado
+                                </span>
+
+                            </div>
+
+                            <div class="p-4 text-center">
+
+                                <p id="visitCourse" class="text-white font-bold text-lg"></p>
+
+                                <p class="text-stone-400 text-xs mt-2 mb-1">
+                                    TU HORA DE VISITA ES
+                                </p>
+
+                                <p id="visitTime" class="text-amber-400 font-bold text-xl font-mono"></p>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
-                <!-- Tabla del Cronograma Manuscrito Original -->
+                <!-- Tabla del cronograma -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
                     <!-- Bloque 1 y 2 -->
                     <div class="space-y-4">
+
+                        <!-- Bloque 1 -->
                         <div class="bg-stone-900/60 p-4 rounded-2xl border border-stone-800">
+
                             <h3 class="font-cinzel font-bold text-amber-400 text-lg mb-3 flex items-center space-x-2">
                                 <i data-lucide="clock" class="w-4 h-4"></i>
                                 <span>Bloque 1 (9:00 - 9:40)</span>
                             </h3>
+
                             <div class="grid grid-cols-2 gap-2 text-sm text-stone-300">
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="1A"><span class="font-bold text-white">1ro A:</span><span class="font-mono text-amber-400">9:00 - 9:10</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="1B"><span class="font-bold text-white">1ro B:</span><span class="font-mono text-amber-400">9:10 - 9:20</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="1C"><span class="font-bold text-white">1ro C:</span><span class="font-mono text-amber-400">9:20 - 9:30</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="1D"><span class="font-bold text-white">1ro D:</span><span class="font-mono text-amber-400">9:30 - 9:40</span></div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="1A">
+                                    <span class="font-bold text-white">1ro A:</span>
+                                    <span class="font-mono text-amber-400">9:00 - 9:10</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="1B">
+                                    <span class="font-bold text-white">1ro B:</span>
+                                    <span class="font-mono text-amber-400">9:10 - 9:20</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="1C">
+                                    <span class="font-bold text-white">1ro C:</span>
+                                    <span class="font-mono text-amber-400">9:20 - 9:30</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="1D">
+                                    <span class="font-bold text-white">1ro D:</span>
+                                    <span class="font-mono text-amber-400">9:30 - 9:40</span>
+                                </div>
+
                             </div>
                         </div>
 
+                        <!-- Bloque 2 -->
                         <div class="bg-stone-900/60 p-4 rounded-2xl border border-stone-800">
+
                             <h3 class="font-cinzel font-bold text-amber-400 text-lg mb-3 flex items-center space-x-2">
                                 <i data-lucide="clock" class="w-4 h-4"></i>
                                 <span>Bloque 2 (9:40 - 10:20)</span>
                             </h3>
+
                             <div class="grid grid-cols-2 gap-2 text-sm text-stone-300">
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="2A"><span class="font-bold text-white">2do A:</span><span class="font-mono text-amber-400">9:40 - 9:50</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="2B"><span class="font-bold text-white">2do B:</span><span class="font-mono text-amber-400">9:50 - 10:00</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="2C"><span class="font-bold text-white">2do C:</span><span class="font-mono text-amber-400">10:00 - 10:10</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="2D"><span class="font-bold text-white">2do D:</span><span class="font-mono text-amber-400">10:10 - 10:20</span></div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="2A">
+                                    <span class="font-bold text-white">2do A:</span>
+                                    <span class="font-mono text-amber-400">9:40 - 9:50</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="2B">
+                                    <span class="font-bold text-white">2do B:</span>
+                                    <span class="font-mono text-amber-400">9:50 - 10:00</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="2C">
+                                    <span class="font-bold text-white">2do C:</span>
+                                    <span class="font-mono text-amber-400">10:00 - 10:10</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="2D">
+                                    <span class="font-bold text-white">2do D:</span>
+                                    <span class="font-mono text-amber-400">10:10 - 10:20</span>
+                                </div>
+
                             </div>
                         </div>
                     </div>
 
                     <!-- Bloque 3, 4 y 5 -->
                     <div class="space-y-4">
+
+                        <!-- Bloque 3 -->
                         <div class="bg-stone-900/60 p-4 rounded-2xl border border-stone-800">
+
                             <h3 class="font-cinzel font-bold text-amber-400 text-lg mb-3 flex items-center space-x-2">
                                 <i data-lucide="clock" class="w-4 h-4"></i>
                                 <span>Bloque 3 (10:30 - 11:10)</span>
                             </h3>
+
                             <div class="grid grid-cols-2 gap-2 text-sm text-stone-300">
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="3A"><span class="font-bold text-white">3ro A:</span><span class="font-mono text-amber-400">10:30 - 10:40</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="3B"><span class="font-bold text-white">3ro B:</span><span class="font-mono text-amber-400">10:40 - 10:50</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="3C"><span class="font-bold text-white">3ro C:</span><span class="font-mono text-amber-400">10:50 - 11:00</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="3D"><span class="font-bold text-white">3ro D:</span><span class="font-mono text-amber-400">11:00 - 11:10</span></div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="3A">
+                                    <span class="font-bold text-white">3ro A:</span>
+                                    <span class="font-mono text-amber-400">10:30 - 10:40</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="3B">
+                                    <span class="font-bold text-white">3ro B:</span>
+                                    <span class="font-mono text-amber-400">10:40 - 10:50</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="3C">
+                                    <span class="font-bold text-white">3ro C:</span>
+                                    <span class="font-mono text-amber-400">10:50 - 11:00</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="3D">
+                                    <span class="font-bold text-white">3ro D:</span>
+                                    <span class="font-mono text-amber-400">11:00 - 11:10</span>
+                                </div>
+
                             </div>
                         </div>
 
+                        <!-- Bloque 4 -->
                         <div class="bg-stone-900/60 p-4 rounded-2xl border border-stone-800">
+
                             <h3 class="font-cinzel font-bold text-amber-400 text-lg mb-3 flex items-center space-x-2">
                                 <i data-lucide="clock" class="w-4 h-4"></i>
                                 <span>Bloque 4 (11:10 - 11:50)</span>
                             </h3>
+
                             <div class="grid grid-cols-2 gap-2 text-sm text-stone-300">
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="4A"><span class="font-bold text-white">4to A:</span><span class="font-mono text-amber-400">11:10 - 11:20</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="4B"><span class="font-bold text-white">4to B:</span><span class="font-mono text-amber-400">11:20 - 11:30</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="4C"><span class="font-bold text-white">4to C:</span><span class="font-mono text-amber-400">11:30 - 11:40</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="4D"><span class="font-bold text-white">4to D:</span><span class="font-mono text-amber-400">11:40 - 11:50</span></div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="4A">
+                                    <span class="font-bold text-white">4to A:</span>
+                                    <span class="font-mono text-amber-400">11:10 - 11:20</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="4B">
+                                    <span class="font-bold text-white">4to B:</span>
+                                    <span class="font-mono text-amber-400">11:20 - 11:30</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="4C">
+                                    <span class="font-bold text-white">4to C:</span>
+                                    <span class="font-mono text-amber-400">11:30 - 11:40</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="4D">
+                                    <span class="font-bold text-white">4to D:</span>
+                                    <span class="font-mono text-amber-400">11:40 - 11:50</span>
+                                </div>
+
                             </div>
                         </div>
 
+                        <!-- Bloque 5 -->
                         <div class="bg-stone-900/60 p-4 rounded-2xl border border-stone-800">
+
                             <h3 class="font-cinzel font-bold text-amber-400 text-lg mb-3 flex items-center space-x-2">
                                 <i data-lucide="clock" class="w-4 h-4"></i>
                                 <span>Bloque 5 (11:50 - 12:30)</span>
                             </h3>
+
                             <div class="grid grid-cols-2 gap-2 text-sm text-stone-300">
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="5A"><span class="font-bold text-white">5to A:</span><span class="font-mono text-amber-400">11:50 - 12:00</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="5B"><span class="font-bold text-white">5to B:</span><span class="font-mono text-amber-400">12:00 - 12:10</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="5C"><span class="font-bold text-white">5to C:</span><span class="font-mono text-amber-400">12:10 - 12:20</span></div>
-                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="5D"><span class="font-bold text-white">5to D:</span><span class="font-mono text-amber-400">12:20 - 12:30</span></div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="5A">
+                                    <span class="font-bold text-white">5to A:</span>
+                                    <span class="font-mono text-amber-400">11:50 - 12:00</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="5B">
+                                    <span class="font-bold text-white">5to B:</span>
+                                    <span class="font-mono text-amber-400">12:00 - 12:10</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="5C">
+                                    <span class="font-bold text-white">5to C:</span>
+                                    <span class="font-mono text-amber-400">12:10 - 12:20</span>
+                                </div>
+
+                                <div class="schedule-row p-2 rounded-lg bg-stone-950/60 flex justify-between border border-stone-800/40" data-course="5D">
+                                    <span class="font-bold text-white">5to D:</span>
+                                    <span class="font-mono text-amber-400">12:20 - 12:30</span>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
         </main>
 
         <!-- Footer -->
         <footer class="border-t border-stone-800 bg-stone-950/80 py-8 mt-12 text-center text-xs text-stone-500">
+
             <div class="max-w-7xl mx-auto px-4 space-y-2">
                 <p class="font-cinzel text-stone-300 text-sm font-semibold">Unidad Educativa - Campo Cosmos y Pensamiento</p>
                 <p>Las esperamos los profes del campo: Cosmos y pensamiento.</p>
             </div>
+
         </footer>
 
     </div>
 
-    <!-- Script for Three.js 3D Background & Interactivity -->
+    <!-- Script: Three.js, cuenta regresiva, buscador y calendario -->
     <script>
         lucide.createIcons();
 
         // Three.js 3D Background
         const container = document.getElementById('canvas-container');
         const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+
+        const camera = new THREE.PerspectiveCamera(
+            75,
+            window.innerWidth / window.innerHeight,
+            0.1,
+            1000
+        );
+
+        const renderer = new THREE.WebGLRenderer({
+            alpha: true,
+            antialias: true
+        });
+
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         container.appendChild(renderer.domElement);
 
-        // 3D Geometries: Sol Andino Geométrico
+        // Sol Andino Geométrico
         const sunGeo = new THREE.OctahedronGeometry(2.2, 2);
-        const sunMat = new THREE.MeshBasicMaterial({ color: 0xF4C430, wireframe: true, transparent: true, opacity: 0.35 });
+
+        const sunMat = new THREE.MeshBasicMaterial({
+            color: 0xF4C430,
+            wireframe: true,
+            transparent: true,
+            opacity: 0.35
+        });
+
         const sunMesh = new THREE.Mesh(sunGeo, sunMat);
         scene.add(sunMesh);
 
         const ringGeo = new THREE.TorusGeometry(3.8, 0.04, 16, 100);
-        const ringMat = new THREE.MeshBasicMaterial({ color: 0xD96B43, wireframe: true, transparent: true, opacity: 0.25 });
+
+        const ringMat = new THREE.MeshBasicMaterial({
+            color: 0xD96B43,
+            wireframe: true,
+            transparent: true,
+            opacity: 0.25
+        });
+
         const ringMesh = new THREE.Mesh(ringGeo, ringMat);
         ringMesh.rotation.x = Math.PI / 3;
         scene.add(ringMesh);
 
-        // Floating particles
+        // Partículas flotantes
         const particlesCount = 250;
         const posArray = new Float32Array(particlesCount * 3);
-        for(let i=0; i<particlesCount*3; i++) {
+
+        for (let i = 0; i < particlesCount * 3; i++) {
             posArray[i] = (Math.random() - 0.5) * 20;
         }
+
         const particlesGeo = new THREE.BufferGeometry();
-        particlesGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-        const particlesMat = new THREE.PointsMaterial({ size: 0.035, color: 0xF4C430, transparent: true, opacity: 0.6 });
+
+        particlesGeo.setAttribute(
+            'position',
+            new THREE.BufferAttribute(posArray, 3)
+        );
+
+        const particlesMat = new THREE.PointsMaterial({
+            size: 0.035,
+            color: 0xF4C430,
+            transparent: true,
+            opacity: 0.6
+        });
+
         const particlesMesh = new THREE.Points(particlesGeo, particlesMat);
         scene.add(particlesMesh);
 
         camera.position.z = 6;
 
-        let mouseX = 0, mouseY = 0;
+        let mouseX = 0;
+        let mouseY = 0;
+
         window.addEventListener('mousemove', (e) => {
             mouseX = (e.clientX / window.innerWidth - 0.5) * 0.5;
             mouseY = (e.clientY / window.innerHeight - 0.5) * 0.5;
@@ -435,17 +673,21 @@
 
         function animate() {
             requestAnimationFrame(animate);
+
             sunMesh.rotation.y += 0.004;
             sunMesh.rotation.x += 0.002;
+
             ringMesh.rotation.z += 0.003;
             particlesMesh.rotation.y += 0.0005;
 
             camera.position.x += (mouseX - camera.position.x) * 0.05;
             camera.position.y += (-mouseY - camera.position.y) * 0.05;
+
             camera.lookAt(scene.position);
 
             renderer.render(scene, camera);
         }
+
         animate();
 
         window.addEventListener('resize', () => {
@@ -454,35 +696,78 @@
             renderer.setSize(window.innerWidth, window.innerHeight);
         });
 
-        // Cuenta Regresiva al 06/11/2026 9:00 AM
+        // Cuenta regresiva al 06/11/2026 9:00 AM
         const eventDate = new Date('2026-11-06T09:00:00').getTime();
+
         function updateCountdown() {
             const now = new Date().getTime();
             const distance = eventDate - now;
 
             if (distance > 0) {
-                document.getElementById('days').innerText = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
-                document.getElementById('hours').innerText = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
-                document.getElementById('minutes').innerText = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
-                document.getElementById('seconds').innerText = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
+                document.getElementById('days').innerText =
+                    String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+
+                document.getElementById('hours').innerText =
+                    String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+
+                document.getElementById('minutes').innerText =
+                    String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+
+                document.getElementById('seconds').innerText =
+                    String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
             }
         }
+
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // Buscador de cursos
+        // Buscador de cursos con horario personalizado
         function filterCourse() {
-            const query = document.getElementById('courseSearch').value.toUpperCase().trim();
+            const input = document.getElementById('courseSearch');
+
+            const query = input.value
+                .toUpperCase()
+                .replace(/\s/g, '');
+
             const rows = document.querySelectorAll('.schedule-row');
-            
+
+            const message = document.getElementById('courseVisitMessage');
+            const visitTime = document.getElementById('visitTime');
+            const visitCourse = document.getElementById('visitCourse');
+
+            let cursoEncontrado = null;
+
             rows.forEach(row => {
                 const course = row.getAttribute('data-course').toUpperCase();
-                if (query && course.includes(query)) {
+
+                row.classList.remove('highlight-course');
+
+                if (query && course === query) {
                     row.classList.add('highlight-course');
-                } else {
-                    row.classList.remove('highlight-course');
+                    cursoEncontrado = row;
                 }
             });
+
+            if (cursoEncontrado) {
+                const nombreCurso = cursoEncontrado
+                    .querySelector('span:first-child')
+                    .textContent;
+
+                const horario = cursoEncontrado
+                    .querySelector('span:last-child')
+                    .textContent;
+
+                visitCourse.textContent = nombreCurso;
+                visitTime.textContent = horario;
+
+                message.classList.remove('hidden');
+
+                // Actualiza el icono de la tarjeta
+                lucide.createIcons();
+
+            } else {
+                message.classList.add('hidden');
+            }
         }
 
         // Descarga de evento .ICS
@@ -498,15 +783,27 @@ DTSTART:20261106T090000
 DTEND:20261106T123000
 END:VEVENT
 END:VCALENDAR`;
-            const blob = new Blob([icsData], { type: 'text/calendar;charset=utf-8;' });
+
+            const blob = new Blob(
+                [icsData],
+                { type: 'text/calendar;charset=utf-8;' }
+            );
+
             const link = document.createElement('a');
+
             link.href = URL.createObjectURL(blob);
             link.setAttribute('download', 'invitacion-especial-2026.ics');
+
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
+
+            URL.revokeObjectURL(link.href);
         }
     </script>
+
+    <!-- Script externo de la galería -->
     <script src="js/galeria.js"></script>
+
 </body>
 </html>
