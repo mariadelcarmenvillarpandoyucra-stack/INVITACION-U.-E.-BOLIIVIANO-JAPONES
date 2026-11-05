@@ -1,0 +1,18 @@
+INVITACIÓN ESPECIAL - VALORES Y COSTUMBRES
+
+Contenido:
+- index.html: página principal de la invitación.
+- css/galeria.css: estilos del carrusel y adaptación a celulares.
+- js/galeria.js: controles, indicadores y desplazamiento táctil.
+- img/galeria/: imágenes visibles en la captura proporcionada.
+
+Cómo abrir:
+1. Extrae el ZIP en una carpeta.
+2. Abre index.html con Chrome, Edge o Firefox.
+3. Se necesita conexión a internet para cargar Tailwind, Three.js, Lucide y Google Fonts, que ya utiliza el diseño original.
+
+Importante:
+Las cinco imágenes incluidas se recortaron de la captura compartida en el chat. Para obtener máxima calidad, puedes reemplazarlas por los archivos originales conservando exactamente sus nombres.
+
+Revisión de contenido pendiente:
+La captura muestra un cronograma hasta 6to curso y horario general hasta las 11:00, mientras que el HTML original contiene horarios hasta 5to D y hasta las 12:30. No se modificaron esos datos para evitar cambiar información del evento sin confirmación.
